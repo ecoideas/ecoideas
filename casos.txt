@@ -1,0 +1,30 @@
+RADICADO	FECHA	TIPO	SITIO	RESULTADO	DENUCIANTE	DENUNCIADO	MAGNITUD	X	Y	OBSERVACIONES
+predios p	27/11/2019	Uso del territorio	Verganzo	No hubo hallazgo de afectación	vivi 	n	a	1018749	1038435	predios para plantacion
+predios p	27/11/2019	Uso del territorio	Verganzo	No hubo hallazgo de afectación	vivi 	n	a	1018314	1038605	predios para plantacion
+predios p	27/11/2019	Uso del territorio	Verganzo	No hubo hallazgo de afectación	vivi 	n	a	1018327	1038606	predios para plantacion
+predios p	27/11/2019	Uso del territorio	Verganzo	No hubo hallazgo de afectación	vivi 	n	a	1018323	1036823	predios para plantacion
+0	16/12/2019	Otro	Canavita Alta	Sin sanción por autor desconocido	nn	nn	alto	1018000	1040000	verificacion zona de compensacion
+0	17/12/2019	Otro	La Esmeralda baja	No registrado	WI	nn	no	1018807	1040721	Vertimento
+	12/12/2019	Residuos sólidos	Tibitoc	No hubo sanción por reclamaciones	aR	IBICOL	MEDIA	1009901	1041530	car
+0	17/12/2019	Uso del territorio	Canavita Alta	No hubo sanción por reclamaciones	nn	MASTER CAT	alta	1018090	1039785	REservorio en ronda de quebrada Manzanos
+0	17/12/2019	Uso del territorio	Canavita baja	No hubo sanción por reclamaciones	nn	Mastercat	alta	1017628	1039484	Reservorio en ronda de Quebrada Manzanos
+	2/1/2020	Parque	La Esmeralda baja	Acacia cerca de tanque y consumo de drogas	Sandra Lopez	NA	media	1019117	1040560	Solicita reemplazo de acacias y parque seguro. Urb. La Esmeralda. Predio mpal, c.cat 258170100000001010014 y 012 tanque de agua Sandra Lopez 3224025742 propietario y dirigir a infraestructura
+0	2020/1/3	Uso del territorio	Casco Urbano	No hubo hallazgo de afectación	cet	na	baja	1018176.4322340498	1040978.9415718791	Oficina
+50093	2020/1/8	Otro	Porvenir	No hubo hallazgo de afectación	CAR	LUIS SANCHEZ SOLER	MEDIO	1019150	1044020	Concesion de aguas para uso pecuario y riego
+62556	2020/1/8	Otro	La Fuente	No hubo hallazgo de afectación	CAR	INVERSIONES ORTEGA	MEDIO	1014720	1044780	Concesion de aguas para uso DOMÉSTICO,  pecuario y riego
+74440	2020/1/8	Otro	La Esmeralda baja	No hubo hallazgo de afectación	NA	ABEL CETINA TINJACA	3.9 L/S	1019634.5581175132	1040825.2178361637	Concesion de aguas superficiales. cod cat. 258170000000000070066000000000 Matr 176-31506
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1021200	1040179	Cañada San Roque, se observa mina de Alfonso Cetina
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1010948	1044282	Pino talado no restaurado. Pista de motocross
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1020960	1039282	probable compra
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1013598	1037632	Predio con posible desarrollo de vivienda
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1014086	1038729	Predio con frailejones. posible compra Nace quebrada El Zanjón, La Esmeralda y El Manantial. Cercado
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1013720	1038634	Predio con desarrollo de vivienda
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1018602	1037388	Entrada a Quebrada honda
+veeduria	2020/1/14	Otro	La Esmeralda alta	No hubo hallazgo de afectación	veeduria	na	alta	1016599	1038304	Cuatro nuevas Casas en Madera y una en concreto
+veeduria	2020/1/14	Uso del territorio	Canavita Alta	Sin sanción por ausencia de autor	veeduria	nn	media	1018602.6772884676	1037390.2342297282	cultivo de papa
+sda	2020/1/23	Otro	Canavita Alta	No hubo hallazgo de afectación	sda	na	alta	1018826	1036936	Aula ambiental Tocamontaña
+NA	2020/2/3	Otro	La Esmeralda baja	Sanción verbal	SDA	NA	media	1020253	1041639	Captación ilegal de agua
+CIDEA	2020/1/17	Otro	Casco Urbano	No hubo hallazgo de afectación	NA	NA	35	1018195	1041140	educacion ambiental. reunion 1 CIDEA
+CIDEA	2020/1/24	Otro	Casco Urbano	No hubo hallazgo de afectación	NA	NA	18	1018195	1041140	educacion ambiental. reunion 2 CIDEA
+CIDEA	2020/1/31	Otro	Casco Urbano	No hubo hallazgo de afectación	NA	NA	100	1018063	1040456	educacion ambiental. Canto al agua, día del agua
+CIDEA	2020/2/07	Otro	Casco Urbano	No hubo hallazgo de afectación	NA	NA	100	1018181	1040893	educacion ambiental. Exposición de experiencias en educación ambental, día de la educación ambiental
