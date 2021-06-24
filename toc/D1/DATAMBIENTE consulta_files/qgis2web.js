@@ -90,12 +90,27 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-        extent: [-8237541.709326, 547661.579634, -8221318.310345, 560331.282210], maxZoom: 28, minZoom: 1
+         maxZoom: 28, minZoom: 1
     })
 });
 
+var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
+map.addControl(layerSwitcher);
 
-map.getView().fit([-8237541.709326, 547661.579634, -8221318.310345, 560331.282210], map.getSize());
+    var searchLayer = new ol.SearchLayer({
+      layer: lyr_PREDIOSDELMUNICIPIO2016_5,
+      colName: 'codigo_ant',
+      zoom: 10,
+      collapsed: true,
+      map: map
+    });
+
+    map.addControl(searchLayer);
+    document.getElementsByClassName('search-layer')[0]
+    .getElementsByTagName('button')[0].className +=
+    ' fa fa-binoculars';
+    
+map.getView().fit([-8228005.017463, 553465.094738, -8227995.111812, 553471.288706], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1
