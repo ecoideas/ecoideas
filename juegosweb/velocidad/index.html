@@ -27,6 +27,11 @@ img {
 </head>
 
 12.Apunta a las estrategias sostenibles</h2>
+
+  <p>
+        Aciertos <span 
+        id="display">0</span> veces
+    </p>
 <!-- 
 <button onclick="setTimeout(myFunction, 3000);">Iniciar</button>
  -->
@@ -49,12 +54,23 @@ function Punto() {
             disp.innerHTML = count;
 }
 </script>
- 
-  <p>
+  <button id="btn">Click Here!</button>
+  
+    <p>
         Button Clicked <span 
         id="display">0</span> Times
     </p>
   
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script>
 <img id="imagen" alt="Sosteniblididad" height="618" src="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/velocidad/Apunta.jpg" usemap="#workmapp" width="618" title="haga click en estrategias sostenibles" />
 
 <map name="workmapp">
