@@ -15,8 +15,8 @@ img {
   40% { transform: translate(1px, -100px) rotate(160deg); }
   50% { transform: translate(-1px, 2px) rotate(200deg); }
   60% { transform: translate(-3px, 1px) rotate(240deg); }
-  70% { transform: translate(3px, 1px) rotate(240deg); }
-  80% { transform: translate(-1px, -1px) rotate(280deg); }
+  70% { transform: translate(300px, 1px) rotate(240deg); }
+  80% { transform: translate(-1px, -100px) rotate(280deg); }
   90% { transform: translate(1px, 2px) rotate(320deg); }
   100% { transform: translate(1px, -2px) rotate(360deg); }
 }
@@ -49,7 +49,7 @@ function myFunction() {
         var btn = document.getElementById("btn");
         var disp = document.getElementById("display");
 function Punto(alt) {
-  alert("Excelente, Gran puntería", alt);
+  alert("Excelente, Gran puntería" + alt);
             count++;
             disp.innerHTML = count;
 }
