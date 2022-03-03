@@ -9,16 +9,16 @@ img {
 
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(40deg); }
-  20% { transform: translate(-3px, 0px) rotate(80deg); }
-  30% { transform: translate(300px, 2px) rotate(120deg); src: https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg; }
-  40% { transform: translate(1px, -100px) rotate(160deg); }
-  50% { transform: translate(-1px, 2px) rotate(200deg); }
-  60% { transform: translate(-3px, 1px) rotate(240deg); }
-  70% { transform: translate(300px, 1px) rotate(240deg); }
-  80% { transform: translate(-1px, -100px) rotate(280deg); }
-  90% { transform: translate(1px, 2px) rotate(320deg); }
-  100% { transform: translate(1px, -2px) rotate(360deg); }
+  10% { transform: translate(-1px, -2px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(0deg); }
+  30% { transform: translate(300px, 2px) rotate(0deg); src: https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg; }
+  40% { transform: translate(1px, -100px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(0deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(300px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -100px) rotate(0deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(0deg); }
 }
 </style>
 <script>
@@ -33,7 +33,99 @@ img {
         Aciertos <span 
         id="display">0</span> veces
     </p>
-<!-- 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+  
+<div id="showtm" style="font-size:21px; font-weight:800;">0:0</div>
+<script type="text/javascript"><!--
+// chronometer / stopwatch JS script - coursesweb.net
+
+// Here set the minutes, seconds, and tenths-of-second when you want the chronometer to stop
+// If all these values are set to 0, the chronometer not stop automatically
+var stmints = 0;
+var stseconds = 0;
+var stzecsec = 0;
+
+// function to be executed when the chronometer stops
+function toAutoStop() {
+  alert('Your life goes on');
+}
+
+// the initial tenths-of-second, seconds, and minutes
+var zecsec = 0;
+var seconds = 0;
+var mints = 0;
+
+var startchron = 0;
+
+function chronometer() {
+  if(startchron == 1) {
+    zecsec += 1;       // set tenths of a second
+
+    // set seconds
+    if(zecsec > 9) {
+      zecsec = 0;
+      seconds += 1;
+    }
+
+    // set minutes
+    if(seconds > 59) {
+      seconds = 0;
+      mints += 1;
+    }
+
+    // adds data in #showtm
+    document.getElementById('showtm').innerHTML = mints+ ' : '+ seconds+ '<sub>'+ zecsec+ '</sub>';
+
+    // if the chronometer reaches to the values for stop, calls whenChrStop(), else, auto-calls chronometer()
+    if(zecsec == stzecsec && seconds == stseconds && mints == stmints) toAutoStop();
+    else setTimeout("chronometer()", 100);
+  }
+}
+
+function startChr() { startchron = 1; chronometer(); }      // starts the chronometer
+function stopChr() { startchron = 0; }                      // stops the chronometer
+function resetChr() {
+  zecsec = 0;  seconds = 0; mints = 0; startchron = 0; 
+  document.getElementById('showtm').innerHTML = mints+ ' : '+ seconds+ '<sub>'+ zecsec+ '</sub>';
+}
+
+// start the chronometer, delete this line if you want to not automatically start the stopwatch
+startChr();
+--></script>
+<p id="demo">Residuos</p>
+
+<script>
+setTimeout(myTimeout1, 2000) 
+setTimeout(myTimeout2, 4000) 
+setTimeout(myTimeout1, 6000) 
+setTimeout(myTimeout2, 8000) 
+setTimeout(myTimeout1, 10000) 
+setTimeout(myTimeout2, 12000) 
+setTimeout(myTimeout1, 14000) 
+setTimeout(myTimeout2, 16000) 
+setTimeout(myTimeout3, 18000) 
+
+function myTimeout1() {
+  document.getElementById("demo").innerHTML = "Sedimentos";
+}
+function myTimeout2() {
+  document.getElementById("demo").innerHTML = "Residuos";
+}
+function myTimeout3() {
+  document.getElementById("demo").innerHTML = "Perdiste";
+}
+</script>
+  
+  <!-- 
 <button onclick="setTimeout(myFunction, 3000);">Iniciar</button>
  -->
 <div class="img-zoom-container">
