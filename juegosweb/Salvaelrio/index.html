@@ -26,7 +26,7 @@ img {
 </script>
 </head>
 <body bgcolor=#009900>
-<h2 style="color:white;">Recuerda: Actividades como la minería y la incorrecta gestión de residuos de consumo generan sedimentación y reducen el caudal natural de Rios y quebradas.</h2>
+<h2 style="color:white;">Recuerda: Actividades como la minería y la incorrecta gestión de residuos de consumo generan sedimentación y reducen el caudal natural de Rios y quebradas. Los proyectos mineros requieren licencia ambiental y un proceso de consulta con las comunidades</h2>
 <h2 style="color:white;">13. Haz click en el tipo de material que afecta al río, para reiniciar actualiza la página</h2>
   <p style="color:white;">
         Aciertos <span 
@@ -62,15 +62,6 @@ function myTimeout3() {
 </script>
 <br />
 <br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-  
  
 <!-- <button onclick="setTimeout(myFunction, 60000);">Iniciar, tienes 1 minuto</button> />
 
@@ -88,9 +79,10 @@ function myFunction() {
         var btn = document.getElementById("btn");
         var disp = document.getElementById("display");
 function Punto(alt) {
+  if (alt == document.getElementById("demo").innerHTML) {
   alert("Excelente, Gran puntería.  " + alt);
             count++;
-            disp.innerHTML = count;
+            disp.innerHTML = count;}
 }
 </script>
   
@@ -106,8 +98,8 @@ function Punto(alt) {
     </script>
 <img id="imagen" alt="Sosteniblididad" height="618" src="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/NewProject.gif" usemap="#workmap1" width="618" title="haga click en estrategias sostenibles" /></img>
 <map name="workmap1">
-  <area alt="Deposita los residuos en el lugar adecuado y haz compostaje" shape="circle" coords="140,200,40" onclick="Punto(alt)" href="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg" target="_blank"></area>
-  <area alt="Los proyectos mineros requieren licenciaa ambiental y un proceso de consulta con las comunidades" shape="circle" coords="220,200,40" onclick="Punto(alt)"  href="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg"></area>
+  <area alt="Residuos" shape="circle" coords="140,200,40" onclick="Punto(alt)" href="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg" target="_blank"></area>
+  <area alt="Sedimentos" shape="circle" coords="220,200,40" onclick="Punto(alt)"  href="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg"></area>
 </map>
 <br />
 <!-- Amargo<input id="Amargoso" type="checkbox" value="Amargoso" />
