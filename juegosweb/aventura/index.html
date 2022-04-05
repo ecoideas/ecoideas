@@ -1,1 +1,135 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  animation: shake 10.5s;
+  animation-iteration-count: infinite;
+}
 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(0deg); }
+  30% { transform: translate(300px, 2px) rotate(0deg); src: https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg; }
+  40% { transform: translate(1px, -100px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(0deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -100px) rotate(0deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(0deg); }
+}
+</style>
+<script>
+
+</script>
+</head>
+<body bgcolor=#009900>
+<h2 style="color:white;">13. Haz click en el tipo de material que afecta al río: RESIDUOS o SEDIMENTOS, coincidiendo con el texto en color resaltado. tienes 8 oportunidades. (Para reiniciar actualiza la página)</h2>
+<h2 style="color:white;">Recuerda: Actividades como la minería y la incorrecta gestión de residuos de consumo generan sedimentación y reducen el caudal natural de Rios y quebradas. Los proyectos mineros requieren licencia ambiental y un proceso de consulta con las comunidades</h2>
+  <p style="color:white;">
+        Aciertos <span 
+        id="display">0</span> veces
+    </p>
+<p id="demo" style="color:black; font-size:20px; background-color:Magenta;">Residuos</p>
+
+<script>
+setTimeout(myTimeout1, 2000) 
+setTimeout(myTimeout2, 4000) 
+setTimeout(myTimeout1, 6000) 
+setTimeout(myTimeout2, 8000) 
+setTimeout(myTimeout2, 10000) 
+setTimeout(myTimeout2, 12000) 
+setTimeout(myTimeout1, 14000) 
+setTimeout(myTimeout2, 16000) 
+setTimeout(myTimeout1, 18000) 
+setTimeout(myTimeout1, 20000) 
+setTimeout(myTimeout2, 22000) 
+setTimeout(myTimeout2, 24000) 
+setTimeout(myTimeout1, 26000) 
+setTimeout(myTimeout3, 28000) 
+
+function myTimeout1() {
+  document.getElementById("demo").innerHTML = "SEDIMENTOS";
+}
+function myTimeout2() {
+  document.getElementById("demo").innerHTML = "RESIDUOS";
+}
+function myTimeout3() {
+  document.getElementById("demo").innerHTML = "PERDISTE";
+  alert("FALLASTE, intentalo de nuevo");
+}
+</script>
+<br />
+<br />
+<br />
+<br />
+ 
+<!-- <button onclick="setTimeout(myFunction, 60000);">Iniciar, tienes 1 minuto</button> />
+<div class="img-zoom-container">
+<script>
+function myFunction() {
+  alert('hola');
+  document.getElementById("imagen").style="transform:rotate(90deg)";
+}
+</script>
+-->
+<script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+function Punto(alt) {
+  if (alt == document.getElementById("demo").innerHTML) {
+  alert("Excelente, Gran puntería.  " + alt);
+            count++;
+            disp.innerHTML = count;
+            if (count == 8){alert("Ganaste, FELICITACIONES");}}
+  else{alert("Fallaste, intentalo de nuevo" + alt);}
+}
+</script>
+  
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+  
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+        }
+    </script>
+<img id="imagen" alt="Sosteniblididad" height="618" src="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/NewProject.gif" usemap="#workmap1" width="618" title="haga click en estrategias sostenibles" /></img>
+<map name="workmap1">
+  <area alt="Residuos" shape="circle" coords="140,200,40" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="Sedimentos" shape="circle" coords="220,200,40" onclick="Punto(alt)"</area>
+</map>
+<br />
+<!-- Amargo<input id="Amargoso" type="checkbox" value="Amargoso" />
+Arboloco<input id="Arboloco" type="checkbox" />
+Arrayan<input id="Arrayan" type="checkbox" value="Arrayan" />
+Cedrillo<input id="Cedrillo" type="checkbox" value="Cedrillo" />
+Ciro<input id="Ciro" type="checkbox" value="Ciro" />
+Cucharo<input id="Cucharo" type="checkbox" value="Cucharo" />
+Encenillo<input id="Encenillo" type="checkbox" value="Encenillo" />
+Espino<input id="Espino" type="checkbox" value="Espino" />
+Frailejon<input id="Frailejon" type="checkbox" value="Frailejon" />
+Hayuelo<input id="Hayuelo" type="checkbox" value="Hayuelo" />
+Juco<input id="Juco" type="checkbox" value="Juco" />
+Pegamosco<input id="Pegamosco" type="checkbox" value="Pegamosco" />
+Puya<input id="Puya" type="checkbox" value="Puya" />
+Quiche<input id="Quiche" type="checkbox" value="Quiche" />
+Romero<input id="Romero" type="checkbox" value="Romero" />
+Tuno
+<input id="Tuno" type="checkbox" value="Tuno" />
+Uva<input id="Uva" type="checkbox" value="Uva" /> -->
+
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>
+  </body>
