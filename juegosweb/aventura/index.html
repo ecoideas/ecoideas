@@ -5,107 +5,31 @@
 function Presentacion() {
   alert("La PRINCESA NEIA tendrá que viajar a distintos sitios y cumplir distintas pruebas recolectando letras para completar la palabra mágica que le permitirá salvar el mundo: \n 1. Diseñar un plan para salvar la naturaleza  \n 2. Cuidar las plantas que ya están en el territorio \n 3. Conocer las plantas nativas \n 4. Reproducir flora nativa \n 5. Contribuir al flujo del ciclo del agua y nutirentes \n 6. Reducir el impacto de las actividades humanas \n 7. Conocer los rios y quebradas en el territorio que habitamos \n 8. Reconocer la importancia de los distintos seres vivos y objetos inertes (dinamica ecologica) en el territorio \n 9. Ayudar a la sociedad a mejorar su relación con el entorno \n 10. Salvar los rios de su desaparición");}
 </script>
-<style>
-img {
-  animation: shake 10.5s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(0deg); }
-  20% { transform: translate(-3px, 0px) rotate(0deg); }
-  30% { transform: translate(300px, 2px) rotate(0deg); src: https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/Salvaelrio/Rio.jpg; }
-  40% { transform: translate(1px, -100px) rotate(0deg); }
-  50% { transform: translate(-1px, 2px) rotate(0deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(0deg); }
-  80% { transform: translate(-1px, -100px) rotate(0deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(0deg); }
-}
-</style>
 
 </head>
 <body bgcolor=#6666ff onload="Presentacion()">
 
-<h2 style="color:white;">13. Haz click en el tipo de material que afecta al río: RESIDUOS o SEDIMENTOS, coincidiendo con el texto en color resaltado. tienes 8 oportunidades. (Para reiniciar actualiza la página)</h2>
-<h2 style="color:white;">Recuerda: Actividades como la minería y la incorrecta gestión de residuos de consumo generan sedimentación y reducen el caudal natural de Rios y quebradas. Los proyectos mineros requieren licencia ambiental y un proceso de consulta con las comunidades</h2>
-  <p style="color:white;">
-        Aciertos <span 
-        id="display">0</span> veces
-    </p>
-<p id="demo" style="color:black; font-size:20px; background-color:Magenta;">Residuos</p>
+<h2 style="color:white;">13. Haz click en la misión que quieres alcanzar</h2>
 
-<script>
-setTimeout(myTimeout1, 2000) 
-setTimeout(myTimeout2, 4000) 
-setTimeout(myTimeout1, 6000) 
-setTimeout(myTimeout2, 8000) 
-setTimeout(myTimeout2, 10000) 
-setTimeout(myTimeout2, 12000) 
-setTimeout(myTimeout1, 14000) 
-setTimeout(myTimeout2, 16000) 
-setTimeout(myTimeout1, 18000) 
-setTimeout(myTimeout1, 20000) 
-setTimeout(myTimeout2, 22000) 
-setTimeout(myTimeout2, 24000) 
-setTimeout(myTimeout1, 26000) 
-setTimeout(myTimeout3, 28000) 
+<br />
+<br />
+<br />
+<br />
 
-function myTimeout1() {
-  document.getElementById("demo").innerHTML = "SEDIMENTOS";
-}
-function myTimeout2() {
-  document.getElementById("demo").innerHTML = "RESIDUOS";
-}
-function myTimeout3() {
-  document.getElementById("demo").innerHTML = "PERDISTE";
-  alert("FALLASTE, intentalo de nuevo");
-}
-</script>
-<br />
-<br />
-<br />
-<br />
- 
-<!-- <button onclick="setTimeout(myFunction, 60000);">Iniciar, tienes 1 minuto</button> />
-<div class="img-zoom-container">
-<script>
-function myFunction() {
-  alert('hola');
-  document.getElementById("imagen").style="transform:rotate(90deg)";
-}
-</script>
--->
-<script type="text/javascript">
-        var count = 0;
-        var btn = document.getElementById("btn");
-        var disp = document.getElementById("display");
-function Punto(alt) {
-  if (alt == document.getElementById("demo").innerHTML) {
-  alert("Excelente, Gran puntería.  " + alt);
-            count++;
-            disp.innerHTML = count;
-            if (count == 8){alert("Ganaste, FELICITACIONES");}}
-  else{alert("Fallaste, intentalo de nuevo" + alt);}
-}
-</script>
-  
-    <script type="text/javascript">
-        var count = 0;
-        var btn = document.getElementById("btn");
-        var disp = document.getElementById("display");
-  
-        btn.onclick = function () {
-            count++;
-            disp.innerHTML = count;
-        }
-    </script>
 <img id="imagen" alt="Sosteniblididad" height="618" src="https://raw.githubusercontent.com/ecoideas/ecoideas.github.io/main/juegosweb/aventura/Aventura2.jpg" usemap="#workmap1" width="618" title="haga click en estrategias sostenibles" /></img>
 <map name="workmap1">
-  <area alt="Residuos" shape="circle" coords="140,200,40" onclick="Punto(alt)" target="_blank"></area>
-  <area alt="Sedimentos" shape="circle" coords="220,200,40" onclick="Punto(alt)"</area>
+  <area alt="1" shape="circle" coords="576,135,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="2" shape="circle" coords="908,508,15" onclick="Punto(alt)"</area>
+  <area alt="3" shape="circle" coords="838,126,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="4" shape="circle" coords="649,409,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="5" shape="circle" coords="643,126,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="6" shape="circle" coords="471,586,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="7" shape="circle" coords="743,93,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="8" shape="circle" coords="464,538,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="9" shape="circle" coords="445,622,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="10" shape="circle" coords="698,651,15" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="11" shape="circle" coords="140,200,40" onclick="Punto(alt)" target="_blank"></area>
+  <area alt="12" shape="circle" coords="140,200,40" onclick="Punto(alt)" target="_blank"></area>
 </map>
 <br />
 <!-- Amargo<input id="Amargoso" type="checkbox" value="Amargoso" />
