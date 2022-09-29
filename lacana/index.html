@@ -93,7 +93,193 @@
         </style>
         <title></title>
     </head>
-    <body>
+    <body onload="fechaa() " bgcolor=#ffffcc>
+<table bgcolor=#f2ffcc>
+    <tr><td>NUEVO CASO</td></tr>
+    <tr>
+    <tr>
+        <td>1.Seleccione Archivo COMPARTIDA 2019\CARLOS2019\Sigambiental\Casos.txt"</td>
+        <td><input type="file" id="fileToLoad"></td>
+        <td><button style='font-size:24px' onclick="loadFileAsText()">2.CARGAR BASE DE DATOS<i class='far fa-keyboard' style='font-size:48px;color:green'></button><td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    3. Radicado<input type="text" id="radicado">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    FECHA.......<input type="text" id="fecha">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+        <td>4.Tipo de evento</td>
+		<td width="100%"><select name="Tipo" id="Tipo" size="1" onchange="Deftipo(this)">
+            <option value="Uso del territorio" />Uso del territorio
+            <option value="Explotación ilegal" />Explotación ilegal
+            <option value="Tala" />Tala
+            <option value="Residuos sólidos" />Residuos sólidos
+            <option value="Vertimiento" />Vertimiento
+            <option value="Contaminación auditiva" />Contaminación auditiva
+            <option value="Contaminación atmosferica" />Contaminación atmosferica
+            <option value="Contaminación visual" />Contaminación visual
+            <option value="Otro" />Otro
+            <option selected value="No registrado" />
+          </select><br />
+         </td>
+	</tr>
+    <tr>
+    </tr>
+    <tr>
+        <td>5.Vereda</td>
+		<td width="100%"><select name="Vereda" id="Vereda" size="1" onchange="Deftipo(this)">
+            <option value="Tibitoc Urbano" />Tibitoc Urbano
+            <option value="Tibitoc" />Tibitoc
+            <option value="Verganzo" />Verganzo
+            <option value="La Esmeralda baja" />La Esmeralda baja
+            <option value="La Esmeralda alta" />La Esmeralda alta
+            <option value="Canavita baja" />Canavita baja
+            <option value="Canavita Alta" />Canavita Alta
+            <option value="Porvenir" />Porvenir
+            <option value="La Fuente" />La Fuente
+            <option value="Casco Urbano" />Casco Urbano
+            <option selected value="No registrado" />
+          </select><br />
+         </td>
+	</tr>
+    <tr>
+    </tr>
+    <tr>
+        <td>6. Resultado?</td>
+		<td width="100%"><select name="Sancion" id="Sancion" size="1" onchange="Deftipo(this)">
+            <option value="No hubo hallazgo de afectación" />No hay afectación ambiental
+            <option value="Sanción verbal" />Sanción verbal
+            <option value="No hubo sanción por reclamaciones" />No, reclamaciones
+            <option value="Sin sanción por ausencia de autor" />No, autor ausente
+            <option value="Sin sanción por autor desconocido" />No, autor desconocido
+            <option value="Medida preventiva" />Si, medida preventiva
+            <option value="Sanción de código de policia" />Si, código de policia
+            <option selected value="No registrado" />
+          </select><br />
+         </td>
+	</tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    7. Denunciante........<input type="text" id="Denunciante">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    8. Denunciado.........<input type="text" id="denunciado">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    9. Magnitud.............<input type="text" id="magnitud">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+		    10.Coordenadas Planas X y Y (si no las tiene, zoom en mapa y click en punto cercano y anote las coordenadas<input type="text" id="ESTE"><input type="text" id="NORTE">
+        </td>
+    </tr>
+    <tr>
+    </tr>
+	<tr>
+		<td colspan="3">
+            11. Observaciones<textarea id="Observaciones" cols="30" rows="5"></textarea>
+            <textarea id="variables" cols="30" rows="5"></textarea>
+            <textarea id="consolidado" cols="30" rows="5" style="display:none;"></textarea>
+        </td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td>12.Digite "Casos.txt"</td>
+        <td><input id="inputFileNameToSaveAs" value = "casos.txt" ></input></td>
+        <td><input id="basededatos" type="hidden" ></input></td>
+        <td><button onclick="saveTextAsFile()">12.SELECCIONE GUARDAR COMO: "CASOS.txt" en COMPARTIDA 2019\CARLOS 2019\Sigambiental\</button></td>
+	</tr>
+</table>
+<a href="ingresardatos.qgz">13. ENTRAR A SISTEMA DE INFORMACION GEOGRAFICA</a> 
+<script type="text/javascript">
+ 
+function saveTextAsFile()
+{
+	document.getElementById("variables").value = document.getElementById("radicado").value + "	" + document.getElementById("fecha").value + "	" + document.getElementById("Tipo").value + "	" + document.getElementById("Vereda").value + "	" + document.getElementById("Sancion").value + "	" + document.getElementById("Denunciante").value + "	" + document.getElementById("denunciado").value + "	" + document.getElementById("magnitud").value + "	" + document.getElementById("ESTE").value + "	" + document.getElementById("NORTE").value + "	" + document.getElementById("Observaciones").value + "\n"
+    var textToSave = document.getElementById("consolidado").value + document.getElementById("variables").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("inputFileNameToSaveAs").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+ 
+    downloadLink.click();
+
+	document.getElementById("variables").value = "Con el fin de dar respuesta al radicado " + document.getElementById("radicado").value + ", el dia " + document.getElementById("fecha").value + " se procedió a hacer la visita técnica para verificar la denuncia de " + document.getElementById("Tipo").value + " en el sector " + document.getElementById("Vereda").value + " de Tocancipá. El resultado de dicha visita fue " + document.getElementById("Sancion").value + ". El denunciante : " + document.getElementById("Denunciante").value + ". El denunciado : " + document.getElementById("denunciado").value + ". La magnitud del evento fué " + document.getElementById("magnitud").value + ". Las coordenadas planas de el lugar son Este = " + document.getElementById("ESTE").value + " y Norte = " + document.getElementById("NORTE").value + ". Se destacan las siguientes observaciones: " + document.getElementById("Observaciones").value + document.getElementById("Funcionario").value + "                       FIRMA DEL FUNCIONARIO"
+    var textToSave = document.getElementById("variables").value + document.getElementById("consolidado").value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = document.getElementById("basededatos").value;
+ 
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.onclick = destroyClickedElement;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+ 
+    downloadLink.click();
+
+}
+ 
+function destroyClickedElement(event)
+{
+    document.body.removeChild(event.target);
+}
+ 
+function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+ 
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) 
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById("consolidado").value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
+var f = new Date();
+document.getElementById("fecha").value = (f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+</script>
+
+<h1>Datos existentes</h1>
+<h1 style="font-size:16px">Radicado-Fecha-Tipo evento-Sector-Resultado-Denunciante-Denunciado-Magnitud-Este-Norte-Observaciones</h1>
+<iframe id='iframe' src="DATAMBIENTE%20consulta_files/casos.txt" onload='readfile()' width="1600"> </iframe>
 <h2>
      MAPA INTERACTIVO DE ACUEDUCTO LOCAL
 </h2> 
